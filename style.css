@@ -31,8 +31,8 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  background-color: lightsteelblue;
+  border-radius: 10px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
@@ -135,3 +135,42 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.character-amount-container {
+  display: flex;
+  align-items: center;
+}
+
+.number-input {
+  width: 2rem;
+
+}
+label {
+  font-weight: bold;
+}
+
+
+#includeLowercase {
+  margin: 20px;
+}
+
+#includeUppercase {
+  margin: 20px;
+}
+
+#includeNumeric {
+  margin: 20px;
+}
+
+#includeSpecialCharacters {
+  margin: 20px
+}
+

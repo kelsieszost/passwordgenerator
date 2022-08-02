@@ -16,23 +16,24 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
-        <form>
+        <form class="form">
+          <div class="character-amount-container">
           <label for="characterAmountNumber">Number of Characters</label>
           <input type="range" min="8" max="128" value="8"
           id="characterAmountRange">
-          <input type="number"min="8" max="128" value="8"
+          <input class="number-input" type="number"min="8" max="128" value="8"
           id="characterAmountNumber">
-
-          <label for="">Include Uppercase</label>
+          </div>
+          <label for="includeUppercase">Include Uppercase</label>
           <input type="checkbox" id="includeUppercase">
 
-          <label for="">Include Lowercase</label>
+          <label for="includeLowercase">Include Lowercase</label>
           <input type="checkbox" id="includeLowercase">
 
-          <label for="">Include Numeric</label>
+          <label for="includeNumeric">Include Numeric</label>
           <input type="checkbox" id="includeNumeric">
 
-          <label for="">Include Special Characters</label>
+          <label for="includeSpecialCharacters">Include Special Characters</label>
           <input type="checkbox" id="includeSpecialCharacters">
         </form>
         <div class="card-body">

@@ -21,11 +21,10 @@ function syncCharacterAmount(e) {
 
 const form = document.getElementById(generator-form)
 
-form.addEventListener("submit") {
+form.addEventListener("submit")
  
-}
 
-const characterAmount = characterAmountNumber.value
+const characterAmount = characterAmountNumber.value()
 const includeUppercase = includeUppercaseElement.checked
 const includeLowercase = includeLowercaseElement.checked
 const includeNumeric = includeNumericElement.checked
@@ -35,7 +34,10 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword(characterAmount, includeUppercase, includeLowercase, includeNumeric, includeSpecialCharacter);
+  var password = generatePassword(characterAmount, includeUppercase, includeLowercase, includeNumeric, includeSpecialCharacter)
+  { 
+    
+  }
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;

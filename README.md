@@ -6,11 +6,8 @@ For this project I used the skills i learned in class to create a password gener
 
 ## Usage
  
- ```md
+ <img src = "./Images/password.png></img>
 
-    ![alt text](assets/images/screenshot.png)
-
-  ```
   Live URL
   https://kelsieszost.github.io/passwordgenerator/ 
 

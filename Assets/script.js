@@ -1,10 +1,9 @@
 var generateBtn = document.querySelector("#generate");
-
  var charNumber = ["0123456789"];
  var charUpper = [ "ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
  var charLower = ["abcdefghijklmnopqrstuvwxyz"];
  var charSpecial = ["!#$%&'()*+,-./:;<=?@[^_`{]|}~"];
- var included =[]
+ var included =[];
 let randomPassword= "";
 
 
@@ -26,7 +25,7 @@ function generatePassword(){
     var chosenLength =prompt(" Choose a length between 8 and 128 characters");
 
   }else((chosenLength >= 8) && (chosenLength<= 128)) 
-    console.log( "Length " + chosenLength);
+    console.log( "Length" + chosenLength);
 
   //include lower case letters
   var includeLower =confirm ( "Include lower case letters? Press OK for yes and Cancel for No");
@@ -34,7 +33,7 @@ function generatePassword(){
   //include lower case characters
   if (includeLower){
     included += charLower;
-    console.log(charLower)
+    console.log(charLower);
   }
 
   //include upper case letters
@@ -43,7 +42,7 @@ function generatePassword(){
   //include upper chase characters 
   if (includeUpper){
     included += charUpper;
-    console.log(charUpper)
+    console.log(charUpper);
   }
 
    //include numbers 
@@ -52,7 +51,7 @@ function generatePassword(){
   //include number characters. 
   if (includeNumber){
     included += charNumber;
-    console.log(charNumber)
+    console.log(charNumber);
   }
 
   //include special characters 
@@ -67,7 +66,7 @@ function generatePassword(){
   }
 
   // generates random string of characters of the desired length.
-  for (var i=0; i < chosenLength; i++){
+  for (var i=0; i < chosenLength; i++) {
     
     randomPassword += included[Math.floor(Math.random()*included.length)];
 
